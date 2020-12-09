@@ -606,3 +606,65 @@ section
     background-color: #ffffff;
     border: 1px solid #e3e3e3;
 }
+
+.news-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-wrapper .news-item
+{
+    width: 32%;
+}
+
+.news-wrapper .news-item .news-title
+{
+    font-family: 'Akrobat';
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    display: block;
+}
+
+.news-link
+{
+    display: inline-block;
+    padding-left: 45px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.news-link:after
+{
+    content: "";
+    width: 27px;
+    height: 27px;
+    background-image: url(../images/icons/news-link.png);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 50;
+    transition: 0.5s;
+}
+
+.news-link:hover:after
+{
+    left: 10px;
+}
+
+.news-wrapper .news-item .news-preview
+{
+    width: 100%;
+}
+
+.sect-news .btn-wrapper
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
