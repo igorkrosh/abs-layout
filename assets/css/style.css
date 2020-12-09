@@ -37,7 +37,7 @@ header
 
 section
 {
-    padding-top: 70px;
+    margin-top: 70px;
 }
 
 .navbar
@@ -55,6 +55,7 @@ section
     width: 870px;
     margin-right: auto;
     margin-left: 70px;
+    overflow: hidden;
 }
 
 .search-input
@@ -343,12 +344,14 @@ section
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .btn-border:hover
 {
     background: url(../images/icons/btn-border-focus.svg);
     background-size: cover;
+    text-decoration: inherit;
 }
 
 .btn-border.black
@@ -359,7 +362,7 @@ section
 .sect-slider
 {
     position: relative;
-    padding-top: 0;
+    margin-top: 0;
     margin-bottom: 50px;
 }
 
@@ -500,4 +503,88 @@ section
 .about-us .btn-border
 {
     margin-top: 30px;
+}
+
+.pluses-wrapper .pluses-item
+{
+    width: 33%;
+    height: 250px;
+    background-color: #1d1d1d;
+    border: 1px solid #282828;
+    color: #ffffff;
+    padding: 0 15px;
+}
+
+.pluses-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pluses-wrapper .pluses-item .plus-icon
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pluses-wrapper .pluses-item .plus-title
+{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pluses-wrapper .pluses-item .plus-description
+{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.abs-media-card
+{
+    background-color: #1d1d1d;
+    color: #ffffff;
+    width: 500px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.abs-media-card h1
+{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Akrobat';
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.abs-media-card h1:after
+{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: #ef7f1b;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    
+}
+
+.abs-media
+{
+    background: url(../images/bg/abs-media-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.abs-media-card .btn-border
+{
+    margin: 20px auto 0 auto;
 }
