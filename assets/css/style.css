@@ -35,6 +35,11 @@ header
     z-index: 50;
 }
 
+section
+{
+    padding-top: 70px;
+}
+
 .navbar
 {
     display: flex;
@@ -325,8 +330,8 @@ header
 
 .btn-border
 {
-    width: 230px;
-    height: 55px;
+    width: 270px;
+    height: 65px;
     background: url(../images/icons/btn-border.svg);
     background-size: cover;
     border: none;
@@ -334,16 +339,28 @@ header
     color: #ffffff;
     font-size: 15px;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
 
 .btn-border:hover
 {
     background: url(../images/icons/btn-border-focus.svg);
+    background-size: cover;
+}
+
+.btn-border.black
+{
+    color: #000000;
 }
 
 .sect-slider
 {
     position: relative;
+    padding-top: 0;
+    margin-bottom: 50px;
 }
 
 .sect-slider .soc-link-wrapper
@@ -466,4 +483,21 @@ header
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 0;
+}
+
+.title
+{
+    font-family: 'Akrobat';
+    font-size: 30px;
+}
+
+.about-us p
+{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about-us .btn-border
+{
+    margin-top: 30px;
 }
