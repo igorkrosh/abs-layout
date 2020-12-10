@@ -72,5 +72,32 @@
     {
         padding-top: 75px;
     }
-    
+
+    .sidebar-content
+    {
+        padding-bottom: 30px;
+    }
+
+    .menu li
+    {
+        margin-bottom: 30px;
+    }
+
+    footer .container
+    {
+        max-width: 870px;
+    }
+
+    .footer-item
+    {
+        max-width: 170px;
+    }
+}
+
+@media(max-width: 992px)
+{
+    .container, footer .container
+    {
+        max-width: 720px;
+    }
 }

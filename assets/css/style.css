@@ -535,12 +535,13 @@ section
 
 .pluses-wrapper .pluses-item
 {
-    width: 33%;
+    width: 33.3%;
     height: 250px;
     background-color: #1d1d1d;
     border: 1px solid #282828;
     color: #ffffff;
     padding: 0 15px;
+    position: relative;
 }
 
 .pluses-wrapper
@@ -551,8 +552,9 @@ section
 
 .pluses-wrapper .pluses-item .plus-icon
 {
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: center;
+    height: 40px;
 }
 
 .pluses-wrapper .pluses-item .plus-title
@@ -565,9 +567,34 @@ section
 
 .pluses-wrapper .pluses-item .plus-description
 {
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 15px;
     text-align: center;
+}
+
+.pluses-wrapper .pluses-item:nth-child(2):after, .pluses-wrapper .pluses-item:nth-child(2):before
+{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/plus.png);
+    
+    z-index: 10;
+}
+
+.pluses-wrapper .pluses-item:nth-child(2):after
+{
+    left: -1px;
+    bottom: -1px;
+    transform: translate(-50%, 50%);
+}
+
+.pluses-wrapper .pluses-item:nth-child(2):before
+{
+    right: -1px;
+    bottom: -1px;
+    transform: translate(50%, 50%);
 }
 
 .abs-media-card
@@ -813,6 +840,8 @@ section
     color: #ffffff;
     text-align: center;
     padding: 60px;
+    position: relative;
+    z-index: 10;
 }
 
 .contact-form-wrapper .title
@@ -837,6 +866,11 @@ section
     border-bottom: 1px solid #4b4b4b;
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+.contact-us
+{
+    position: relative;
 }
 
 .btn-orange
@@ -864,12 +898,6 @@ section
 {
     font-size: 12px;
     color: #a2a2a2;
-}
-
-.contact-us
-{
-    background: url(../images/bg/sect-contact-us.jpg) no-repeat;
-    background-size: cover;
 }
 
 footer
@@ -1027,4 +1055,27 @@ footer .policy
 .btn-menu.active:before
 {
     transform: translate(-50%, -50%) rotate(135deg);
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */
+}
+
+[class*="ymaps-2"][class*="-controls__control"]
+{
+    left: auto!important;
+    right: 10px!important;
+}
+
+.ymap
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
