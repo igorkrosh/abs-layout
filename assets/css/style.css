@@ -20,7 +20,7 @@ body
     background-color: #f8f8f8;
 }
 
-body, header
+.main-content, header
 {
     padding-left: 620px;
 }
@@ -117,7 +117,7 @@ section
 {
     font-weight: 700;
     font-size: 15px;
-    padding-left: 30px;
+    padding-left: 25px;
     position: relative;
     transition: 0.5s;
     display: block;
@@ -140,7 +140,7 @@ section
     background: url(../images/icons/phone.png);
     width: 12px;
     height: 21px;
-    left: 7px;
+    left: 0px;
     top: 0px;
 }
 
@@ -150,6 +150,26 @@ section
     width: 19px;
     height: 14px;
     top: 6px;
+}
+
+.contact.adress:after
+{
+    background: url(../images/icons/adress.png);
+    width: 17px;
+    height: 23px;
+    left: 0px;
+    top: 0px;
+}
+
+.contact.adress
+{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.contact.adress:hover
+{
+    transform: none;
 }
 
 .navbar .contacts-wrapper
@@ -847,4 +867,99 @@ section
 {
     background: url(../images/bg/sect-contact-us.jpg) no-repeat;
     background-size: cover;
+}
+
+footer
+{
+    background-color: #ededed;
+    padding: 40px 0;
+}
+
+footer .container
+{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title
+{
+    display: block;
+    color: #ef7f1b;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.text-sm
+{
+    font-size: 12px;
+    display: block;
+}
+
+footer .contact
+{
+    margin-top: 25px;
+}
+
+.footer-item
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+}
+
+.docs-list
+{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+}
+
+.docs-list li
+{
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.docs-list li:after
+{
+    content: "";
+    position: absolute;
+    background: url(../images/icons/doc.png);
+    left: 3px;
+    top: 5px;
+    width: 15px;
+    height: 13px;
+    transition: 0.5s;
+}
+
+
+.docs-list li:hover:after
+{
+    left: 8px;
+}
+
+.docs-list li a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-title.black
+{
+    color: #000000;
+}
+
+footer .copyright
+{
+    text-align: left;
+}
+
+footer .policy
+{
+    text-align: left;
 }
