@@ -100,4 +100,37 @@
     {
         max-width: 720px;
     }
+
+    .pluses-wrapper .pluses-item
+    {
+        width: 50%;
+    }
+
+    .pluses-wrapper .pluses-item:nth-child(2):before
+    {
+        content: none;
+    }
+
+    .pluses-wrapper .pluses-item:nth-child(3):before
+    {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url(../images/icons/plus.png);
+        z-index: 10;
+        right: -1px;
+        bottom: -1px;
+        transform: translate(50%, 50%);
+    }
+
+    .partners-wrapper
+    {
+        flex-wrap: wrap;
+    }
+
+    .partners-wrapper .partner
+    {
+        margin-bottom: 15px;
+    }
 }
