@@ -56,8 +56,11 @@ section
     width: 870px;
     margin-right: auto;
     margin-left: 70px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+}
+
+.container::before, .container::after{
+    content: ' ';
+    display: table;
 }
 
 .search-input
