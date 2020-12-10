@@ -1,0 +1,30 @@
+@media(max-width: 1440px)
+{
+    .sidebar
+    {
+        width: 350px;
+    }
+
+    .main-content, header
+    {
+        padding-left: 350px;
+    }
+
+    .stats
+    {
+        width: 572px;
+        height: 217px;
+        padding: 15px 100px 15px 140px;
+    }
+
+    .stats p
+    {
+        margin-top: 10px;
+    }
+
+    .stats .stats-title b
+    {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}

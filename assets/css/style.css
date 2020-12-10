@@ -53,9 +53,12 @@ section
 
 .container
 {
-    width: 870px;
+    max-width: 870px;
+    width: 100%;
     margin-right: auto;
-    margin-left: 70px;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .container::before, .container::after{
@@ -491,6 +494,8 @@ section
     transform: translateX(-50%);
     padding: 15px 130px;
     color: #ffffff;
+    width: 622px;
+    height: 267px;
 }
 
 .stats .stats-title
@@ -877,7 +882,8 @@ footer
 
 footer .container
 {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
