@@ -394,11 +394,12 @@ section
 
 .sect-slider .soc-link-wrapper
 {
-    position: absolute;
+    position: fixed;
     right: 0; 
     top: 50%;
     z-index: 10;
     transform: translateY(-50%);
+    z-index: 20;
 }
 
 .soc-link-wrapper .soc-link
