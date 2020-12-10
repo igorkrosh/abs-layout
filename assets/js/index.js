@@ -85,7 +85,11 @@ function SetMobileMenu()
             $(this).addClass('active');
             $('.sidebar').addClass('active');
         }
-        
+    })
+
+    $('.btn-sidebar-close').on('click', function() {
+        $('.btn-menu').removeClass('active');
+        $('.sidebar').removeClass('active');
     })
     
 }
