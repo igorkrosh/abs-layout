@@ -22,7 +22,7 @@ body
 
 .main-content, header
 {
-    padding-left: 620px;
+    padding-left: 520px;
 }
 
 header
@@ -56,9 +56,7 @@ section
     max-width: 870px;
     width: 100%;
     margin-right: auto;
-    margin-left: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 80px;
 }
 
 .container::before, .container::after{
@@ -183,7 +181,7 @@ section
 .sidebar
 {
     position: fixed;
-    width: 620px;
+    width: 520px;
     height: 100vh;
     top: 0;
     left: 0;
@@ -338,7 +336,7 @@ section
     height: 3px;
     width: 65px;
     background-color: #ef7f1b;
-    left: 0;
+    left: 80px;
     top: 0;
 }
 
@@ -968,4 +966,65 @@ footer .copyright
 footer .policy
 {
     text-align: left;
+}
+
+.btn-menu
+{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    transition: 0.5s;
+    background: none;
+    display: none;
+}
+
+.btn-menu:before, .btn-menu:after, .btn-menu span
+{
+    height: 2px;
+    position: absolute;
+    background: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.btn-menu span
+{
+    width: 65%;    
+}
+
+.btn-menu:before
+{
+    content: "";
+    width: 50%;
+    transform: translate(-50%, -6px);
+}
+
+.btn-menu:after
+{
+    content: "";
+    width: 50%;
+    transform: translate(-50%, 6px);
+}
+
+.btn-menu:hover:after, .btn-menu:hover:before, .btn-menu:hover span
+{
+    width: 65%;
+}
+
+.btn-menu.active span
+{
+    opacity: 0; 
+}
+
+.btn-menu.active:after
+{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.btn-menu.active:before
+{
+    transform: translate(-50%, -50%) rotate(135deg);
 }

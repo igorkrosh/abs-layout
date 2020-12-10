@@ -27,4 +27,50 @@
         font-size: 60px;
         line-height: 60px;
     }
+
+    .container
+    {
+        margin-left: auto;
+        padding: 0 25px;
+    }
+
+    .main-slider .slider-item .container:after
+    {
+        left: 25px;
+    }
+}
+
+@media(max-width: 1200px)
+{
+    .btn-menu
+    {
+        display: block;
+    }
+
+    .sidebar
+    {
+        transition: 0.5s;
+        left: -100%;
+    }
+
+    .sidebar.active
+    {
+        left: 0;
+    }
+
+    .main-content, header
+    {
+        padding-left: 0;
+    }
+
+    header, .sidebar .logo-wrapper .logo
+    {
+        height: 75px;
+    }
+
+    body
+    {
+        padding-top: 75px;
+    }
+    
 }
