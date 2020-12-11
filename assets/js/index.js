@@ -6,7 +6,6 @@ function Core()
 {
     SetMainSlider();
     SetMobileMenu();
-    SetAbsMediaFilter();
 
     $(window).on('scroll', SticlySidebar);
     $(window).on('resize', SticlySidebarResize);
