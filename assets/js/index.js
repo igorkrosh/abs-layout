@@ -6,6 +6,7 @@ function Core()
 {
     SetMainSlider();
     SetMobileMenu();
+    SetCardSwitcher();
 
     $(window).on('scroll', SticlySidebar);
     $(window).on('resize', SticlySidebarResize);
@@ -92,5 +93,34 @@ function SetMobileMenu()
         $('.sidebar').removeClass('active');
     })
     
+}
+
+function SetCardSwitcher()
+{
+    $('.btn-card-switch').on('click', function() {
+        if ($(this).hasClass('active'))
+        {
+            return;
+        }
+
+        $('.btn-card-switch').removeClass('active');
+        $(this).addClass('active');
+
+        let targetCard = $(this).attr('target');
+
+        $('.card.active').animate({
+            opacity: 0
+        }, 500, function() {
+            $('.card.active').removeClass('active');
+
+            $(`[card-name="${targetCard}"]`).css('opacity', 0);
+            $(`[card-name="${targetCard}"]`).addClass('active');
+            $(`[card-name="${targetCard}"]`).animate({
+                opacity: 1
+            }, 500)
+        })
+        
+        
+    })
 }
 
