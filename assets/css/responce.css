@@ -163,6 +163,11 @@
     {
         justify-content: center;
     }
+
+    .vacancies .title-wrapper, .vacancies .vacancies-list
+    {
+        padding: 0;
+    }
 }
 
 @media(max-width: 756px)
@@ -431,5 +436,11 @@
     .timer-title
     {
         text-align: center;
+    }
+
+    .vacancies .title-wrapper
+    {
+        flex-direction: column;
+        margin-bottom: 25px;
     }
 }
