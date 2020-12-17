@@ -443,4 +443,21 @@
         flex-direction: column;
         margin-bottom: 25px;
     }
+
+    
+    .contact-info .col
+    {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .contact-info .container
+    {
+        flex-direction: column;
+    }
+
+    .contact-info 
+    {
+        min-height: auto;
+    }
 }

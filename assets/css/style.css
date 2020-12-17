@@ -1498,3 +1498,24 @@ footer .policy
     justify-content: center;
     margin-bottom: 25px;
 }
+
+.contact-info .col
+{
+    max-width: 345px;
+}
+
+
+.contact-info .col:first-child
+{
+    margin-right: auto;
+}
+
+.contact-info .container
+{
+    display: flex;
+}
+
+.contact-info
+{
+    min-height: 400px;
+}
