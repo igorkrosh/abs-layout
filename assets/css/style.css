@@ -1484,3 +1484,17 @@ footer .policy
     top: 0;
     display: none;
 }
+
+.btn-border.large
+{
+    width: 288px;
+    height: 70px;
+    font-size: 14px;
+}
+
+.vacancies .card .btn-wrapper
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
