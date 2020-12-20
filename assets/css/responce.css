@@ -179,6 +179,11 @@
         justify-content: space-between;
         padding: 0 25px;
     }
+
+    .youtube-video
+    {
+        height: 370px;
+    }
 }
 
 @media(max-width: 756px)
@@ -475,5 +480,10 @@
     .about-us-slider .slider-item img
     {
         height: 280px;
+    }
+
+    .youtube-video
+    {
+        height: 180px;
     }
 }
