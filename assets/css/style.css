@@ -1155,14 +1155,14 @@ footer .policy
 
 .abs-select select
 {
-    width: 120px;
+    min-width: 120px;
     height: 25px;
     border-radius: 0;
     font-size: 12px;
     border: 1px solid #bdbdbd;
     appearance: none;
     padding-left: 10px;
-    padding-right: 25px;
+    padding-right: 35px;
     cursor: pointer;
 }
 
@@ -1550,3 +1550,46 @@ footer .policy
     position: absolute;
     z-index: 5;
 }
+
+.gallery .title
+{
+    text-align: center;
+}
+
+.gallery-wrapper 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 55px;
+}
+
+.gallery-wrapper .gallery-item
+{
+    width: 250px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.gallery-wrapper .gallery-item img
+{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-wrapper .gallery-item:hover img
+{
+    transform: scale(1.05);
+}
+
+.gallery .card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

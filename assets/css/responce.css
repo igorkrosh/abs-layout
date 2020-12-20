@@ -168,6 +168,17 @@
     {
         padding: 0;
     }
+
+    .gallery-wrapper .gallery-item
+    {
+        margin-right: 0;
+    }
+
+    .gallery-wrapper
+    {
+        justify-content: space-between;
+        padding: 0 25px;
+    }
 }
 
 @media(max-width: 756px)

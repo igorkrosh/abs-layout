@@ -8,6 +8,7 @@ function Core()
     SetMobileMenu();
     SetCardSwitcher();
     SetSimpleSlider();
+    SetGallery();
 
     $(window).on('scroll', SticlySidebar);
     $(window).on('resize', SticlySidebarResize);
@@ -109,19 +110,22 @@ function SetCardSwitcher()
 
         let targetCard = $(this).attr('target');
 
-        $('.card.active').animate({
-            opacity: 0
-        }, 500, function() {
-            $('.card.active').removeClass('active');
+        SwitchCard(targetCard)
+    })
+}
 
-            $(`[card-name="${targetCard}"]`).css('opacity', 0);
-            $(`[card-name="${targetCard}"]`).addClass('active');
-            $(`[card-name="${targetCard}"]`).animate({
-                opacity: 1
-            }, 500)
-        })
-        
-        
+function SwitchCard(target)
+{
+    $('.card.active').animate({
+        opacity: 0
+    }, 500, function() {
+        $('.card.active').removeClass('active');
+
+        $(`[card-name="${target}"]`).css('opacity', 0);
+        $(`[card-name="${target}"]`).addClass('active');
+        $(`[card-name="${target}"]`).animate({
+            opacity: 1
+        }, 500)
     })
 }
 
@@ -137,5 +141,20 @@ function SetSimpleSlider()
     });
 
     $('.simple-slider a').simpleLightbox();
+}
+
+function SetGallery()
+{
+    $('#gallery-switcher').change(function() {
+        let targetCard = $(this).val();
+        SwitchCard(targetCard);
+    });
+
+    let galleryArray = $('.gallery-wrapper');
+
+    for (gallery of galleryArray)
+    {
+        $(gallery).find('a').simpleLightbox();
+    }
 }
 
