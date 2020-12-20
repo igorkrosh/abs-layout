@@ -460,4 +460,9 @@
     {
         min-height: auto;
     }
+
+    .about-us-slider .slider-item img
+    {
+        height: 280px;
+    }
 }

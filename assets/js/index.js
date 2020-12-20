@@ -7,6 +7,7 @@ function Core()
     SetMainSlider();
     SetMobileMenu();
     SetCardSwitcher();
+    SetSimpleSlider();
 
     $(window).on('scroll', SticlySidebar);
     $(window).on('resize', SticlySidebarResize);
@@ -122,5 +123,19 @@ function SetCardSwitcher()
         
         
     })
+}
+
+function SetSimpleSlider()
+{
+    $('.simple-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navContainer: '.slider-nav.simple',
+        dots: false,
+        //autoplay: true,
+    });
+
+    $('.simple-slider a').simpleLightbox();
 }
 

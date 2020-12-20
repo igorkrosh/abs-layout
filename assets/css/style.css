@@ -438,7 +438,7 @@ section
     z-index: 10;
 }
 
-.sect-slider .slider-nav button
+.slider-nav button
 {
     width: 70px;
     height: 70px;
@@ -448,27 +448,27 @@ section
     transition: 0.5s;
 }
 
-.sect-slider .slider-nav button:hover
+.slider-nav button:hover
 {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.sect-slider .slider-nav .owl-prev
+.slider-nav .owl-prev
 {
     border-right: 1px solid #ffffff;
 }
 
-.sect-slider .slider-nav .owl-prev:after
+.slider-nav .owl-prev:after
 {
     content: url(../images/icons/arrow-prev.png);
 }
 
-.sect-slider .slider-nav .owl-next
+.slider-nav .owl-next
 {
     border-left: 1px solid #ffffff;
 }
 
-.sect-slider .slider-nav .owl-next:after
+.slider-nav .owl-next:after
 {
     content: url(../images/icons/arrow-next.png);
 }
@@ -1518,4 +1518,35 @@ footer .policy
 .contact-info
 {
     min-height: 400px;
+}
+
+.about-us p, .about-us i
+{
+    margin-top: 40px;
+    display: block;
+}
+
+.grey-text
+{
+    color: #8e8e8e;
+}
+
+.about-us-slider .slider-item img
+{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-us-slider
+{
+    position: relative;
+}
+
+.slider-nav.simple
+{
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    z-index: 5;
 }
